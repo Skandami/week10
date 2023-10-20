@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="assets/normalize.css" />
+    	<link rel="stylesheet" href="/style1.css" />
+
+</head>
+<body>
+ <h1>Я учу JavaScript!</h1>
+        
+ <main class="gallery">
+    <h2>Галерея</h2>
+        <img id="image-1" src="./assets/slider/3.jpg" alt="office">
+     <div clas="gallery__buttons">
+ <button onclick="getElementById('image-1').src = './assets/slider/1.jpg'">Previous
+    </button>
+    <button onclick="getElementById('image-1').src = './assets/slider/2.jpg'">Next
+    </button>
+    <div class="gallery__price">
+    <button id="price" onclick="calculateTotalPrice()">Узнать стоимость</button>
+</div></div>
+ </main>     
+<script>
+  // калькулятор
+let quantity;
+let price;
+function calculateTotalPrice(quantity=5,price=20000){
+    const result = quantity*price;
+    return alert(`Стоимость покупки ${result.toLocaleString("ru-RU")} рублей`);
+}
+//Я учу Javascript
+function typeMessage(){
+    console.log('Я учу JavaScript!');
+}
+typeMessage();
+</script>
+ 
+</body>
+
+</html>
